@@ -1,0 +1,193 @@
+@import '~antd/dist/antd.less';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  margin: 30px 30px;
+}
+
+.menu-bar {
+  padding: 0 20px;
+  border-bottom: solid 1px #e8e8e8;
+  overflow: auto;
+  box-shadow: 0 0 30px #f3f1f1;
+  overflow: hidden;
+  background-color: #f39222;
+}
+
+.logo {
+  width: 100px;
+  float: left;
+  padding: 7px 10px;
+}
+
+.logo a,
+.ant-drawer-title {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.logo a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-top {
+  background-color: transparent !important;
+}
+
+.navbar-top .ant-menu-item a {
+  padding: 15px 15px !important;
+}
+
+.navbar-top-link {
+  color: #fff !important;
+}
+
+.navbar-top-link:hover {
+  background-color: #fe9c0e !important;
+  border-color: #fe9c0e !important;
+}
+
+.menu-con {
+  width: calc(100% - 100px);
+  float: left;
+}
+
+.menu-con .ant-menu-item {
+  padding: 0px 5px;
+}
+
+.menu-con .ant-menu-submenu-title {
+  padding: 10px 20px;
+}
+
+.menu-con .ant-menu-item a,
+.menu-con .ant-menu-submenu-title a {
+  padding: 10px 15px;
+}
+
+.menu-con .ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.menu-con .left-menu {
+  float: left;
+}
+
+.menu-con .right-menu {
+  float: right;
+}
+
+.menu-con button:hover,
+.menu-con button:focus {
+  background-color: #f39222;
+}
+
+.bars-menu {
+  float: right;
+  height: 32px;
+  padding: 5px 10px 35px 10px;
+  margin-top: 8px;
+  display: none;
+  background: none;
+  box-shadow: none;
+}
+
+.bars-btn {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+}
+
+.bars-btn:after,
+.bars-btn:before {
+  content: attr(x);
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  background: #fff;
+}
+
+.bars-btn:after {
+  top: auto;
+  bottom: -6px;
+}
+
+.ant-drawer-header {
+  background-color: #f39222;
+}
+
+.ant-drawer-body {
+  padding: 0;
+}
+
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item,
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-submenu {
+  display: inline-block;
+  width: 100%;
+}
+
+.ant-drawer-body .ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover {
+  border-bottom-color: transparent;
+}
+
+.ant-drawer-close {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .bars-menu {
+    display: inline-block;
+  }
+
+  .left-menu,
+  .right-menu {
+    display: none;
+  }
+
+  .logo a {
+    padding: 6px 20px;
+    margin-left: -20px;
+  }
+
+  .menu-con .ant-menu-item,
+  .menu-con .ant-menu-submenu-title {
+    padding: 1px 20px;
+  }
+}
+
+.error-text-block {
+  color: #fff;
+  text-align: center;
+  background-color: #f00;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 30px 10px 30px;
+  padding: 20px 0px;
+  border-top: 1px solid #e9ecef;
+}
