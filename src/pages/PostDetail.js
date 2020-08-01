@@ -26,10 +26,15 @@ const PostDetail = () => {
     <Layout>
       <div>
         <h1> Post ID: {id}</h1>
-        {loading && <div>Loading...</div>}
         {error && <span className="text-danger">ERROR: {error}</span>}
-        <h2>{post.title}</h2>
-        <p>{post.body}</p>
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <div>
+            <h2>{post.title}</h2>
+            <p>{post.body}</p>
+          </div>
+        )}
       </div>
     </Layout>
   );
